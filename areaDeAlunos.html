@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Área de alunos - YourGYM</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat:wght@400;700&display=swap');
+        *{
+            margin: 0px;
+            padding: 0px;
+        }
+        body{
+            background-color: #000000;
+            color: #FFFBFE;
+        }
+        .apresentacao{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            text-align: center;
+            padding-top: 10%;
+        }
+        .apresentacao__conteudo{
+            display: flex;
+            flex-direction: column;
+            gap: 40px;
+            margin-bottom: 2%;
+        }
+
+        .apresentacao__conteudo__titulo{
+            font-size: 3em;
+            font-family: "Krona One", sans-serif;
+            font-weight: 400;
+            font-style: normal;
+        }
+        .apresentacao__conteudo__subtitulo{
+            font-size: 1.5em;
+            font-family: "Krona One", sans-serif;
+            font-weight: 400;
+            font-style: normal;
+        }
+        strong{
+            color: #063751;
+        }
+        .container{
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+        .card{
+            background-color: #FFFBFE;
+            width: 220px;
+            color: #000000;
+            margin: 10px;
+            border-radius: 15px;
+        }
+        .card-image{
+            height: 170px;
+            margin-bottom: 15px;
+            background-size: cover;
+            border-radius: 15px 15px 0 0;
+        }
+        .card h2{
+            font-family: "Krona One", sans-serif;
+            font-size: 1em;
+            padding: 10px;
+        }
+        .card p{
+            font-family: "Montserrat", sans-serif;
+            font-size: 0.9em;
+            padding: 10px;
+        }
+        .card a{
+            background-color: #063751;
+            color: #FFFBFE;
+            padding: 15px 20px;
+            display: block;
+            text-align: center;
+            text-decoration: none;
+            font-family: "Montserrat", sans-serif;
+            font-weight: bolder;
+        }
+        .foto1{
+            background-image: url(imagens/imagem4.jpg);
+        }
+        .foto2{
+            background-image: url(imagens/imagem5.jpg);
+        }
+        .foto3{
+            background-image: url(imagens/imagem6.jpg);
+        }
+    </style>
+</head>
+<body>
+    <main class="apresentacao">
+        <section class="apresentacao__conteudo">
+            <h1 class="apresentacao__conteudo__titulo titulo2">Bem vindo(a) a área de alunos Your<strong>GYM</strong></h1>
+            <h2 class="apresentacao__conteudo__subtitulo subtitulo2">Escolha uma das opções abaixo e deixe essa vida de <strong>FRANGO</strong>!</h2>
+        </section>
+        <section class="container">
+            <div class="card">
+                <div class="card-image foto1"></div>
+                <h2>Adicionar lista de exercícios</h2>
+                <p>Selecionando essa opção, você tera o direito de escolher um nome para a sua lista, o grupo Muscular e os exercícios</p>
+                <a href="#">Selecionar opção</a>
+            </div>
+            <div class="card">
+                <div class="card-image foto2"></div>
+                <h2>Visualizar listas de exercícios</h2>
+                <p>Selecionando essa opção, você poderá visualizar todas as listas de exercícios que foram adicionadas com a primeira opção</p>
+                <a href="#">Selecionar opção</a>
+            </div>
+            <div class="card">
+                <div class="card-image foto3"></div>
+                <h2>Editar lista de exercícios</h2>
+                <p>Selecionando essa opção, você tera o direito de escolher oque deseja alterar ou deletar sua lista de exercícios</p>
+                <a href="#">Selecionar opção</a>
+            </div>
+        </section>
+    </main>
+</body>
+</html>

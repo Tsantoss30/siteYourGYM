@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Escolha de planos</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat:wght@400;700&display=swap');
+        *{
+            margin: 0px;
+            padding: 0px;
+        }
+        body{
+            background-color: #000000;
+            color: #FFFBFE;
+        }
+        .apresentacao{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            text-align: center;
+            padding-top: 10%;
+        }
+        .apresentacao__conteudo{
+            display: flex;
+            flex-direction: column;
+            gap: 40px;
+            margin-bottom: 2%;
+        }
+
+        .apresentacao__conteudo__titulo{
+            font-size: 2em;
+            font-family: "Krona One", sans-serif;
+            font-weight: 400;
+            font-style: normal;
+        }
+        .apresentacao__conteudo__texto{
+            font-size: 1.5em;
+            font-family: "Montserrat", sans-serif;
+            font-weight: 400;
+            font-style: normal;
+        }
+        strong{
+            color: #063751;
+        }
+        .container{
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+        .card{
+            background-color: #FFFBFE;
+            width: 300px;
+            height: 400px;
+            color: #000000;
+            margin: 10px;
+            border-radius: 15px;
+            text-align: center;
+            padding: 20px;
+        }
+        .card p{
+            font-family: "Montserrat", sans-serif;
+            font-weight: bolder;
+        }
+        .card h2{
+            font-family: "Krona One", sans-serif;
+            font-size: 1em;
+            padding: 10px;
+        }
+        .card a{
+            background-color: #063751;
+            color: #FFFBFE;
+            padding: 15px 20px;
+            display: block;
+            text-align: center;
+            text-decoration: none;
+            font-family: "Montserrat", sans-serif;
+            font-weight: bolder;
+        }
+        
+    </style>
+</head>
+<body>
+    <header></header>
+    <main class="apresentacao">
+        <section class="apresentacao__conteudo">
+            <h1 class="apresentacao__conteudo__titulo">Falta pouco para finalizar o seu <strong>cadastro na YourGym</strong>!</h1>
+            <p class="apresentacao__conteudo__texto">Basta selecionar um plano:</p>
+        </section>
+        <section class="container">
+            <div class="card">
+                <p>Plano diario</p>
+                <h2><span>R$</span>20</h2>
+                <a href="index.html">Selecionar plano</a>
+            </div>
+            <div class="card">
+                <p>plano mensal</p>
+                <h2><span>R$</span>150</h2>
+                <a href="index.html">Selecionar plano</a>
+            </div>
+            <div class="card">
+                <p>plano anual</p>
+                <h2><span>R$</span>2000</h2>
+                <a href="index.html">Selecionar plano</a>
+            </div>
+        </section>
+    </main>
+    <footer></footer>
+</body>
+</html>

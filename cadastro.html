@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro-YourGYM</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat:wght@400;700&display=swap');
+        *{
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+        }
+        body{
+            width: 100%;
+            height: 100vh;
+            background-color: #000000;
+            color: #FFFBFE;
+        }
+        .container{
+            padding: 10% 15%;
+            display: flex;
+            justify-content: space-between;
+        }
+        .container-texto{
+            width: 50%;
+            margin-right: 2%;
+        }
+        .container-texto h1{
+            font-family: "Krona One", sans-serif;
+        }
+        .container-texto p {
+            margin-top: 20px;
+            font-family: "Montserrat", sans-serif;
+        }
+        strong{
+            color: #085272;
+        }
+        .formulario{
+            font-family: "Montserrat", sans-serif;
+            width: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            background-color: #063751;
+            padding: 3rem;
+            border-radius: 8px;
+        }
+        .cabecalho__formulario{
+            margin-bottom: 3rem;
+        }
+        .cabecalho__formulario h1::after{
+            content: '';
+            display: block;
+            width: 19rem;
+            height: 0.3rem;
+            background-color: #FFFBFE;
+            position: absolute;
+            margin: 0 auto;
+            border-radius: 10px;
+        }
+        .input__group{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            padding: 1rem 0;
+        }
+        .input__box{
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 1.1rem;
+        }
+        .input__box input{
+            margin: 0.6rem 0;
+            padding: 0.8rem 1.2rem;
+            border: none;
+            border-radius: 10px;
+        }
+        .input__box label,
+        .gender-title h6{
+            font-size: 0.75rem;
+            font-weight: 600;
+            color: #FFFBFE;
+        }
+        .input__box input::placeholder{
+            color: #000000;
+        }
+        .gender-group{
+            display: flex;
+            justify-content: space-between;
+            margin-top: 0.62rem;
+            padding: 0 0.5rem;
+        }
+        .gender-input{
+            display: flex;
+            align-items: center;
+        }
+        .gender-input input{
+            margin-right: 0.35rem;
+        }
+        .gender-input label{
+            font-size: 0.81rem;
+            color: #FFFBFE;
+            font-weight: 600;
+        }
+        .continue-button button{
+            width: 100%;
+            margin-top: 2.5rem;
+            border: none;
+            padding: 0.62rem;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .continue-button a{
+            text-decoration: none;
+            font-size: 0.93rem;
+            font-weight: 500;
+            color: #000000;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="container-texto">
+            <h1>Procurando uma boa academia para começar aquele <strong>projetinho</strong>?</h1>
+            <p>Faça agora o seu cadastro na Your<strong>GYM</strong> e tenha um novo estilo de vida!</p>
+        </div>
+        <div class="formulario">
+            <form action="#">
+                <div class="cabecalho__formulario"> 
+                    <div class="titulo">
+                        <h1>Realize o seu cadastro</h1>
+                    </div>
+                </div>
+                <div class="input__group">
+                    <div class="input__box">
+                        <label for="fullname">Nome Completo</label>
+                        <input id="fullname" type="text" name="fullname" placeholder="Digite o seu nome completo" required>
+                    </div>
+                    <div class="input__box">
+                        <label for="email">E-mail</label>
+                        <input id="email" type="text" name="email" placeholder="Digite o seu melhor e-mail" required>
+                    </div>
+                    <div class="input__box">
+                        <label for="cpf">CPF</label>
+                        <input id="cpf" type="text" name="cpf" placeholder="Digite o seu CPF" required>
+                    </div>
+                    <div class="input__box">
+                        <label for="numero">Numero do telefone</label>
+                        <input id="numero" type="text" name="numero" placeholder="(xx) - xxxx-xxxx" required>
+                    </div>
+                    <div class="input__box">
+                        <label for="data-Nascimento">Data de nascimento</label>
+                        <input id="data-Nascimento" type="text" name="data-Nascimento" placeholder="Digite a sua data de nascimento" required>
+                    </div>
+                    <div class="input__box">
+                        <label for="peso">Peso</label>
+                        <input id="peso" type="text" name="peso" placeholder="Digite o seu peso" required>
+                    </div>
+                    <div class="input__box">
+                        <label for="altura">Altura</label>
+                        <input id="altura" type="text" name="altura" placeholder="Digite a sua altura" required>
+                    </div>
+                </div>
+                <div class="gender-inputs">
+                    <div class="gender-title">
+                        <h6>Gênero</h6>
+                    </div>
+
+                    <div class="gender-group">
+                        <div class="gender-input">
+                            <input type="radio" id="female" name="gender">
+                            <label for="female">Feminino</label>
+                        </div>
+                        <div class="gender-input">
+                            <input type="radio" id="male" name="gender">
+                            <label for="male">Masculino</label>
+                        </div>
+                        <div class="gender-input">
+                            <input type="radio" id="otheres" name="gender">
+                            <label for="otheres">Outros</label>
+                        </div>
+                        <div class="gender-input">
+                            <input type="radio" id="none" name="gender">
+                            <label for="none">Prefiro não dizer</label>
+                        </div>
+                    </div>
+                </div>
+                <div class="continue-button">
+                    <button><a href="#">Continuar</a></button>
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
